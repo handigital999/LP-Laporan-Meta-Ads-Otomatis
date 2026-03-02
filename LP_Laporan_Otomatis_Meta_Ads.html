@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetaFlow — Auto Meta Ads Reporting to Google Sheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  🎉 Setup selesai dalam <strong>24 jam</strong> atau uang kembali
+  <span>·</span>
+  Response WhatsApp dalam <strong>1 jam</strong>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="logo">Meta<em>Flow</em></div>
+  <div class="nav-links">
+    <a href="#how">Cara Kerja</a>
+    <a href="#testi">Testimoni</a>
+    <a href="#pricing">Harga</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="nav-wa" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+    Chat WhatsApp
+  </a>
+</nav>
+
+<!-- HERO -->
+<div style="border-bottom:1px solid var(--border)">
+<div class="hero">
+  <!-- Left -->
+  <div>
+    <div class="hero-eyebrow">n8n Automation · Meta Ads · Google Sheets</div>
+    <h1>Laporan Meta Ads kamu <mark>otomatis</mark> setiap hari</h1>
+    <p class="hero-desc">
+      Tidak perlu lagi copy-paste data dari Ads Manager. Workflow n8n saya akan tarik data leads, CPL, budget, dan reach kamu langsung ke Google Sheets — otomatis, setiap hari, tanpa sentuh apapun.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="btn-wa-main" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Konsultasi Gratis via WhatsApp
+      </a>
+      <div class="btn-wa-sub">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        Gratis konsultasi · Tidak ada kewajiban beli · Respon &lt; 1 jam
+      </div>
+      <div class="hero-trust">
+        <div class="trust-avatars">
+          <div class="av av-1">A</div>
+          <div class="av av-2">R</div>
+          <div class="av av-3">D</div>
+          <div class="av av-4">S</div>
+        </div>
+        <div class="trust-text">
+          <strong>Sudah dipercaya 20+ klien</strong>
+          dari digital agency, UMKM, hingga freelancer ads
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Mockup -->
+  <div class="hero-visual">
+    <div class="badge-float" style="top:-16px;right:-16px">
+      <div class="badge-float-icon">⚡</div>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--ink)">Auto-Sync</div>
+        <div class="badge-float-text">Jalan tiap hari otomatis</div>
+      </div>
+    </div>
+    <div class="mockup-wrap">
+      <div class="mockup-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <div class="mockup-url">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+          docs.google.com/spreadsheets · Laporan Meta Ads
+        </div>
+      </div>
+      <div class="sheet-mock">
+        <div class="sheet-title">
+          📊 Laporan ADS — Bulan Ini
+          <span class="sheet-live">LIVE SYNC</span>
+        </div>
+        <table class="sheet-table">
+          <thead>
+            <tr>
+              <th>Tanggal</th><th>Leads</th><th>CPL</th><th>Budget</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>13 Jul</td><td>12</td><td>Rp23.802</td><td>Rp214.218</td><td><span class="chip-aktif">Aktif</span></td></tr>
+            <tr><td>14 Jul</td><td>16</td><td>Rp33.426</td><td>Rp167.134</td><td><span class="chip-aktif">Aktif</span></td></tr>
+            <tr><td>15 Jul</td><td>11</td><td>Rp15.069</td><td>Rp165.759</td><td><span class="chip-aktif">Aktif</span></td></tr>
+            <tr><td>16 Jul</td><td>10</td><td>Rp16.431</td><td>Rp146.311</td><td><span class="chip-aktif">Aktif</span></td></tr>
+          </tbody>
+        </table>
+        <div class="kpi-row">
+          <div class="kpi-box">
+            <div class="kpi-label">TOTAL LEADS</div>
+            <div class="kpi-val">66</div>
+            <div class="kpi-change up">↑ +12 hari ini</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">AVG CPL</div>
+            <div class="kpi-val">23K</div>
+            <div class="kpi-change up">↓ turun 8%</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">BUDGET</div>
+            <div class="kpi-val">82%</div>
+            <div class="kpi-change" style="color:var(--muted)">on track</div>
+          </div>
+        </div>
+        <div class="auto-note">
+          <span>🤖</span>
+          <span>Data diperbarui otomatis oleh n8n · Terakhir: hari ini 06:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- LOGOS -->
+<div class="logos-section">
+  <div class="logos-label">TOOLS YANG DIGUNAKAN</div>
+  <div class="logos-row">
+    <div class="logo-item">
+      <svg viewBox="0 0 24 24" fill="#e8452c"><path d="M21.5 12c0 5.25-4.25 9.5-9.5 9.5S2.5 17.25 2.5 12 6.75 2.5 12 2.5 21.5 6.75 21.5 12z"/></svg>
+      n8n
+    </div>
+    <div class="logo-item">
+      <svg viewBox="0 0 24 24" fill="#1877f2"><rect width="24" height="24" rx="12" fill="#1877f2"/><path d="M14.5 7h-1.8C12.1 7 12 7.4 12 8v1.5h2.5l-.3 2.5H12V18h-2.5v-6H8V9.5h1.5V7.8C9.5 6 10.6 5 12.3 5c.8 0 2.2.1 2.2.1V7z" fill="white"/></svg>
+      Meta Ads
+    </div>
+    <div class="logo-item">
+      <svg viewBox="0 0 24 24"><path fill="#0f9d58" d="M19.86 3H4.14A1.14 1.14 0 003 4.14v15.72A1.14 1.14 0 004.14 21h15.72A1.14 1.14 0 0021 19.86V4.14A1.14 1.14 0 0019.86 3z"/><path fill="white" d="M13.5 7.5h4v1.5h-4zm0 3h4v1.5h-4zm0 3h4v1.5h-4zM6.5 7.5h5.5v4.5H6.5zm0 6h1.5v3H6.5zm2 0h1.5v3H8.5zm2 0h1.5v3h-1.5z"/></svg>
+      Google Sheets
+    </div>
+    <div class="logo-item">
+      <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+      WhatsApp Alert
+    </div>
+    <div class="logo-item">
+      <svg viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Google API
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM / SOLUTION -->
+<section id="problem">
+  <div class="problem-grid">
+    <div>
+      <div class="section-super">MASALAH YANG KAMU ALAMI</div>
+      <h2 class="section-h2">Capek laporan manual setiap hari?</h2>
+      <p class="section-sub">Kalau kamu ngelola Meta Ads, pasti familiar sama masalah ini.</p>
+      <div class="problem-list reveal">
+        <div class="problem-item">
+          <div class="problem-icon">😩</div>
+          <div class="problem-text">
+            <strong>Buang waktu 1–2 jam sehari</strong>
+            <p>Buka Ads Manager, screenshot, copy angka satu-satu ke spreadsheet. Berulang tiap hari.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <div class="problem-icon">❌</div>
+          <div class="problem-text">
+            <strong>Rawan salah input & lupa</strong>
+            <p>Typo, salah kolom, atau lupa update bikin laporan jadi tidak akurat. Klien marah.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <div class="problem-icon">📵</div>
+          <div class="problem-text">
+            <strong>Tidak bisa pantau real-time</strong>
+            <p>Kalau lagi di luar, tidak tahu performa iklan hari ini sampai bisa duduk di depan laptop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="solution-card reveal">
+      <div class="solution-tag">✅ SOLUSI</div>
+      <div class="solution-h">Serahkan ke automation. Kamu fokus optimasi.</div>
+      <p class="solution-p">Workflow n8n saya tarik semua data dari Meta API dan masukkan langsung ke Google Sheets milikmu — otomatis setiap hari sesuai jadwal yang kamu tentukan.</p>
+      <div class="solution-features">
+        <div class="sf-item">
+          <div class="sf-check"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          Tarik data leads, CPL, reach, spend otomatis
+        </div>
+        <div class="sf-item">
+          <div class="sf-check"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          Google Sheets sudah siap pakai + grafik otomatis
+        </div>
+        <div class="sf-item">
+          <div class="sf-check"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          Notifikasi WhatsApp/Email kalau ada anomali
+        </div>
+        <div class="sf-item">
+          <div class="sf-check"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg></div>
+          Setup sekali, jalan selamanya tanpa maintenance
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<div class="how-section" id="how" style="padding: 96px 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 60px">
+    <div class="section-super">CARA KERJA</div>
+    <h2 class="section-h2">4 langkah, selesai dalam 24 jam</h2>
+    <p class="section-sub">Kamu tidak perlu paham teknis apapun. Saya yang urus semuanya.</p>
+    <div class="how-steps reveal">
+      <div class="how-step">
+        <div class="step-badge">1</div>
+        <h3>Chat & Diskusi</h3>
+        <p>Hubungi saya via WhatsApp. Ceritakan kebutuhan kamu — berapa akun, metrik apa yang dibutuhkan.</p>
+        <div class="step-time">⏱ ~15 menit</div>
+      </div>
+      <div class="how-step">
+        <div class="step-badge">2</div>
+        <h3>Akses & Setup</h3>
+        <p>Kamu berikan akses Meta Business. Saya bangun workflow n8n dan template Google Sheets-nya.</p>
+        <div class="step-time">⏱ ~4–8 jam</div>
+      </div>
+      <div class="how-step">
+        <div class="step-badge">3</div>
+        <h3>Testing & Revisi</h3>
+        <p>Saya jalankan workflow, cek semua data masuk dengan benar. Revisi sampai sempurna.</p>
+        <div class="step-time">⏱ ~2–4 jam</div>
+      </div>
+      <div class="how-step">
+        <div class="step-badge">4</div>
+        <h3>Serah Terima</h3>
+        <p>Workflow aktif. Kamu terima panduan lengkap dan bisa langsung pakai. Done!</p>
+        <div class="step-time">⏱ Total &lt; 24 jam</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testi">
+  <div class="section-super">TESTIMONI</div>
+  <h2 class="section-h2">Kata mereka yang sudah pakai</h2>
+  <p class="section-sub">Bukan janji — ini hasil nyata dari klien yang sudah pakai layanan ini.</p>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Dulu saya habis 1,5 jam tiap pagi buat rekap iklan. Sekarang buka spreadsheet langsung ada semua. Irit waktu banget, bisa fokus ke optimasi kampanye."</p>
+      <div class="testi-author">
+        <div class="testi-av" style="background:#fef3c7;color:#92400e">AR</div>
+        <div>
+          <div class="testi-name">Arif R.</div>
+          <div class="testi-role">Digital Marketer · Jakarta</div>
+          <div class="verified">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Klien terverifikasi
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Setup-nya cepat banget, kurang dari 24 jam udah jalan. Yang paling saya suka itu notif WA kalau CPL tiba-tiba naik — langsung tahu ada yang harus dioptimasi."</p>
+      <div class="testi-author">
+        <div class="testi-av" style="background:#ede9fe;color:#5b21b6">DS</div>
+        <div>
+          <div class="testi-name">Dina S.</div>
+          <div class="testi-role">Owner Agency Ads · Surabaya</div>
+          <div class="verified">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Klien terverifikasi
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Responsif banget pas ada kendala. Saya pakai untuk 3 akun iklan sekaligus, semua masuk ke satu sheet yang rapi. Worth it banget harganya dibanding waktu yang dihemat."</p>
+      <div class="testi-author">
+        <div class="testi-av" style="background:#dcfce7;color:#166534">RH</div>
+        <div>
+          <div class="testi-name">Rizky H.</div>
+          <div class="testi-role">Performance Marketer · Bandung</div>
+          <div class="verified">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            Klien terverifikasi
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background:var(--off);max-width:100%;padding:96px 60px;border-top:1px solid var(--border)">
+<div style="max-width:1200px;margin:0 auto">
+  <div class="section-super">HARGA</div>
+  <h2 class="section-h2">Transparan, tanpa biaya tersembunyi</h2>
+  <p class="section-sub">Bayar sekali, jalan selamanya. Tidak ada biaya langganan bulanan.</p>
+  <div class="pricing-grid reveal">
+    <div class="price-card">
+      <div class="price-tier">BASIC</div>
+      <div class="price-num"><span class="price-sup">Rp</span>350<span style="font-size:24px">rb</span></div>
+      <div class="price-note">Setup sekali · Tidak ada biaya bulanan</div>
+      <div class="price-sep"></div>
+      <div class="feat-list">
+        <div class="feat-item"><span class="feat-icon">✅</span> 1 akun Meta Ads</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Sync harian otomatis</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Template Google Sheets</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Metrik dasar (leads, CPL, spend)</div>
+        <div class="feat-item off"><span class="feat-icon">—</span> Notifikasi WA/Email</div>
+        <div class="feat-item off"><span class="feat-icon">—</span> Multi-kampanye</div>
+      </div>
+      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20mau%20order%20paket%20Basic%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+
+    <div class="price-card featured">
+      <div class="pop-tag">PALING LARIS</div>
+      <div class="price-tier">STANDARD</div>
+      <div class="price-num"><span class="price-sup">Rp</span>650<span style="font-size:24px">rb</span></div>
+      <div class="price-note">Setup sekali · Tidak ada biaya bulanan</div>
+      <div class="price-sep"></div>
+      <div class="feat-list" style="color:rgba(255,255,255,0.85)">
+        <div class="feat-item"><span class="feat-icon">✅</span> Sampai 3 akun Meta Ads</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Sync harian otomatis</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Dashboard sheets custom</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Semua metrik (10+ data point)</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Notifikasi WA & Email</div>
+        <div class="feat-item off" style="color:rgba(255,255,255,0.35)"><span class="feat-icon">—</span> Sync per jam</div>
+      </div>
+      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Standard%20Meta%20Ads%20Automation" class="btn-order btn-order-wa" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">PREMIUM</div>
+      <div class="price-num"><span class="price-sup">Rp</span>1,2<span style="font-size:24px">jt</span></div>
+      <div class="price-note">Setup sekali · Tidak ada biaya bulanan</div>
+      <div class="price-sep"></div>
+      <div class="feat-list">
+        <div class="feat-item"><span class="feat-icon">✅</span> Unlimited akun Meta Ads</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Sync per jam atau harian</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Dashboard advanced + grafik</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> KPI custom sesuai kebutuhan</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Multi-channel alert</div>
+        <div class="feat-item"><span class="feat-icon">✅</span> Perbandingan antar kampanye</div>
+      </div>
+      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Premium%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="guarantee reveal">
+    <div class="guarantee-icon">🛡️</div>
+    <div>
+      <h3>Garansi Uang Kembali 100%</h3>
+      <p>Kalau setup tidak selesai dalam 24 jam atau workflow tidak berjalan sesuai yang dijanjikan — kamu dapat refund penuh. Tidak ada pertanyaan, tidak ada ribet. Saya percaya diri dengan kualitas kerja saya.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-super">FAQ</div>
+  <h2 class="section-h2">Pertanyaan yang sering ditanya</h2>
+  <p class="section-sub" style="margin-bottom:40px">Tidak ketemu jawabannya? Chat langsung via WhatsApp.</p>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-q">Apakah data iklan saya aman? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Sangat aman. Data langsung masuk ke Google Sheets milik kamu sendiri — saya tidak menyimpan data apapun di server saya. Akses Meta Business yang kamu berikan juga bisa kamu cabut kapan saja setelah setup selesai.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Apakah saya perlu paham teknis atau coding? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Tidak perlu sama sekali. Kamu cukup berikan akses Meta Business dan Google Sheets, saya yang setup semuanya. Di akhir saya kasih panduan cara pakai dalam bahasa sederhana.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Data apa saja yang bisa ditarik otomatis? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Bisa hampir semua metrik dari Meta Ads: jumlah leads, CPL, reach, impressions, clicks, CTR, budget terpakai, cost per click, dan lainnya. Bisa disesuaikan sesuai kebutuhanmu.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Apakah ada biaya bulanan setelah setup? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Tidak ada. Bayar sekali, workflow jalan selamanya. Kamu hanya perlu menanggung biaya server/hosting n8n sendiri kalau mau self-hosted (opsional, ada panduan-nya), atau saya bisa bantu setup di cloud gratis dulu.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Berapa lama setup selesai? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Maksimal 24 jam setelah semua akses diberikan. Rata-rata klien sudah bisa pakai dalam 4–8 jam saja.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Kalau ada masalah setelah setup, bagaimana? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Saya berikan support gratis 30 hari setelah setup. Kalau ada error atau ada yang perlu disesuaikan, hubungi saya via WhatsApp dan saya perbaiki tanpa biaya tambahan.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <h2>Mulai hemat <span>5 jam</span> per minggu<br>mulai hari ini.</h2>
+  <p>Setup dalam 24 jam. Garansi uang kembali. Tidak ada risiko apapun.</p>
+  <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis.%20Boleh%20konsultasi%20dulu%3F" class="final-btn" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669 -.5  - .  - .  - .  - .  - .  - .  - .  - .  - .
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+      Garansi uang kembali
+    </div>
+    <div class="fr-item">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+      Selesai dalam 24 jam
+    </div>
+    <div class="fr-item">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/></svg>
+      Konsultasi gratis
+    </div>
+    <div class="fr-item">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+      Support 30 hari
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="logo">Meta<em>Flow</em></div>
+  <p>© 2025 MetaFlow Automation · Powered by n8n & Meta API · Made in Indonesia 🇮🇩</p>
+</footer>
+
+<!-- Floating WA Button -->
+<a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis" class="float-wa" target="_blank">
+  <div class="float-wa-pulse"></div>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+  <span>Hubungi Kami</span>
+</a>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Animate number counters when in view
+function animateCount(el, target, suffix) {
+  let start = 0;
+  const step = target / 60;
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target + suffix; clearInterval(timer); return; }
+    el.textContent = Math.floor(start) + suffix;
+  }, 16);
+}
+</script>
+</body>
+</html>

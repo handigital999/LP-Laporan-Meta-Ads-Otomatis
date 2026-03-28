@@ -6,6 +6,25 @@
 <title>MetaFlow — Auto Meta Ads Reporting to Google Sheets</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3491341001021007');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3491341001021007&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
 
@@ -25,7 +44,8 @@
     <a href="#pricing">Harga</a>
     <a href="#faq">FAQ</a>
   </div>
-  <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="nav-wa" target="_blank">
+  <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="nav-wa" target="_blank"
+     onclick="fbq('track', 'Contact')">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
     Chat WhatsApp
   </a>
@@ -42,7 +62,8 @@
       Tidak perlu lagi copy-paste data dari Ads Manager. Workflow n8n saya akan tarik data leads, CPL, budget, dan reach kamu langsung ke Google Sheets — otomatis, setiap hari, tanpa sentuh apapun.
     </p>
     <div class="hero-ctas">
-      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="btn-wa-main" target="_blank">
+      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20meta%20Ads%20otomatis" class="btn-wa-main" target="_blank"
+         onclick="fbq('track', 'Lead')">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
         Konsultasi Gratis via WhatsApp
       </a>
@@ -322,7 +343,8 @@
         <div class="feat-item off"><span class="feat-icon">—</span> Notifikasi WA/Email</div>
         <div class="feat-item off"><span class="feat-icon">—</span> Multi-kampanye</div>
       </div>
-      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20mau%20order%20paket%20Basic%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank">
+      <a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20mau%20order%20paket%20Basic%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank"
+         onclick="fbq('track', 'InitiateCheckout', {value: 350000, currency: 'IDR', content_name: 'Paket Basic'})">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
         Order via WhatsApp
       </a>
@@ -342,7 +364,8 @@
         <div class="feat-item"><span class="feat-icon">✅</span> Notifikasi WA & Email</div>
         <div class="feat-item off" style="color:rgba(255,255,255,0.35)"><span class="feat-icon">—</span> Sync per jam</div>
       </div>
-      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Standard%20Meta%20Ads%20Automation" class="btn-order btn-order-wa" target="_blank">
+      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Standard%20Meta%20Ads%20Automation" class="btn-order btn-order-wa" target="_blank"
+         onclick="fbq('track', 'InitiateCheckout', {value: 650000, currency: 'IDR', content_name: 'Paket Standard'})">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
         Order via WhatsApp
       </a>
@@ -361,7 +384,8 @@
         <div class="feat-item"><span class="feat-icon">✅</span> Multi-channel alert</div>
         <div class="feat-item"><span class="feat-icon">✅</span> Perbandingan antar kampanye</div>
       </div>
-      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Premium%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank">
+      <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20mau%20order%20paket%20Premium%20Meta%20Ads%20Automation" class="btn-order btn-order-outline" target="_blank"
+         onclick="fbq('track', 'InitiateCheckout', {value: 1200000, currency: 'IDR', content_name: 'Paket Premium'})">
         <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
         Order via WhatsApp
       </a>
@@ -415,8 +439,13 @@
 <div class="final-cta">
   <h2>Mulai hemat <span>5 jam</span> per minggu<br>mulai hari ini.</h2>
   <p>Setup dalam 24 jam. Garansi uang kembali. Tidak ada risiko apapun.</p>
-  <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis.%20Boleh%20konsultasi%20dulu%3F" class="final-btn" target="_blank">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669 -.5  - .  - .  - .  - .  - .  - .  - .  - .  - .
+  <a href="https://wa.me/6285136523690?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis.%20Boleh%20konsultasi%20dulu%3F" class="final-btn" target="_blank"
+     onclick="fbq('track', 'Lead')">
+    <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+    Konsultasi Gratis Sekarang
+  </a>
+  <div class="final-reassure">
+    <div class="fr-item">
       <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
       Garansi uang kembali
     </div>
@@ -442,7 +471,8 @@
 </footer>
 
 <!-- Floating WA Button -->
-<a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis" class="float-wa" target="_blank">
+<a href="https://wa.me/6285136523690?text=Halo%20min,%20saya%20tertarik%20dengan%20layanan%20laporan%20Meta%20Ads%20otomatis" class="float-wa" target="_blank"
+   onclick="fbq('track', 'Contact')">
   <div class="float-wa-pulse"></div>
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
   <span>Hubungi Kami</span>
